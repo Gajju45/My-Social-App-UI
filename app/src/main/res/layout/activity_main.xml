@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/social" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_background">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_socialTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:text="My Social"
+                android:textColor="#ACAAAA" />
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/RL2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/start_a_new_social_adventure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="50dp"
+                android:letterSpacing="0.14"
+                android:text="Start a new \nsocial adventure."
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white_bg_right_upr_side"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="top"
+                android:layout_marginEnd="52dp"
+                android:layout_marginStart="32dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="42dp"
+                android:gravity="start"
+                android:letterSpacing="0.1"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get involved with people and event\naround you"
+                android:textColor="@color/text_color_1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SignIn_mainActivityBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:textAllCaps="false"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/button_bg_dark"/>
+
+
+            <TextView
+                android:id="@+id/creatAcc_TV"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"
+                android:gravity="end"
+                android:letterSpacing="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Or Create Account  "
+                android:drawableTint="@color/text_color_1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_alt_24"
+                android:textColor="@color/text_color_1" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
